@@ -20,7 +20,7 @@ public class StreamExample7 {
         flowers.add(new Flower("Подсолнух", 20));
         flowers.add(new Flower("Хризантема", 25));
 
-        List<Flower> filteredFlowers = flowers.stream().filter(flower -> flower.getNectar() > 10).collect(Collectors.toList());
+        List<Flower> filteredFlowers = flowers.stream().filter(flower -> flower.getNectar() > 10).toList();
         filteredFlowers.forEach(System.out::println);
 
     }
